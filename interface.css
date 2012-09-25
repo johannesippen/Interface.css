@@ -12,9 +12,6 @@ textarea {
   display: block;
 }
 /* Structure */
-.ios {
-//  width: 320px;
-}
 .ios header {
   height: 44px;
   text-align: center;
