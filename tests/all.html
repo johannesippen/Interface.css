@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url(../src/reset.css);
+    @import url(../src/structure.css);
+    @import url(../src/standard.skin.css);
+    @import url(../src/extended.skin.css);
+    @import url(../src/debug.skin.css);
+  </style>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body class="ios">
+  <!-- Titlebar -->
+  <header data-position="fixed">
+    <button>Reload</button>
+    <h1>Dashboard</h1>
+    <button>Reload</button>
+  </header>
+  <!-- Headline -->
+  <h2>
+    Standard Text
+  </h2>
+  <!-- Standard Text -->
+  <p>Players last 30 days</p>
+  <!-- Headline -->
+  <h2>
+    List
+  </h2>
+  <ul>
+    <li>Apples</li>
+    <li>Oranges</li>
+    <li>Bananas</li>
+  </ul>
+  <h2>
+    List with Values
+  </h2>
+  <ul>
+    <li>Space Used<span>1.5 GB</span></li>
+    <li>Software Version<span>1.0.0.2.3</span></li>
+    <li>Build Date<span>2012-08-30</span></li>
+  </ul>
+  <h2>
+    List with Switch
+  </h2>
+  <ul>
+    <li>Left Engine<input type="checkbox"></li>
+    <li>Right Engine<input type="checkbox"></li>
+    <li>Accelerator<input type="checkbox"></li>
+  </ul>
+  <h2> 
+    List with Text Input
+  </h2>
+  <ul>
+    <!-- List Item with Text -->
+    <li><label>Username</label><input type="text"></li>
+    <!-- List Item with Password -->
+    <li><label>Password</label><input type="password"></li>
+  </ul>
+  <!-- TODO: Selectable Lists -->
+  <h2>Navigation List</h2>
+  <ul>
+    <li><a href="#">Settings</a></li>
+    <li><a href="#">Extensions</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+  <h2>Navigation List with Icons</h2>
+  <ul>
+    <li><a href="#"><img src="../src/img/Icon-Small@2x.png">Aside Magazine</a></li>
+    <li><a href="#"><img src="../src/img/Icon-Small@2x.png">Whitespace</a></li>
+    <li><a href="#"><img src="../src/img/Icon-Small@2x.png">Magazine Grid</a></li>
+  </ul>
+  <h2>Combination</h2>
+  <ul>
+    <li><a href="#">Wi Fi<span>Fritz Box WLAN</span></a></li>
+    <li><a href="#">3G Settings</a></li>
+    <li>Frequenzy<span>2.4 GHz</span></li>
+    <li>Airplane Mode<input type="checkbox"></li>
+  </ul>
+  <form data-layout="button">
+    <button type="reset">Reset</button>
+  </form>
+  <h2>
+    Text Input
+  </h2>
+  <form data-layout="shorttext">
+    <textarea placeholder="Enter Text here"></textarea>
+  </form>
+  <h2>
+    Searchbar &amp; Fullscreen List
+  </h2>
+  <form data-layout="search"><input type="search"></form>
+  <ul data-layout="fullscreen">
+    <li><a href="#">Wi Fi<span>Fritz Box WLAN</span></a></li>
+    <li><a href="#">3G Settings</a></li>
+    <li>Frequenzy<span>2.4 GHz</span></li>
+  </ul>
+  <h2>
+    Fullscreen Text Input
+  </h2>
+  <form data-layout="longtext">
+    <textarea placeholder="Enter Text here"></textarea>
+  </form>
+  <!-- Notes-Style Textbox -->
+  <textarea data-layout="notes" placeholder="Search"></textarea>
+  <h2>
+    Navigation
+  </h2>
+  <!-- Tabbar -->
+  <!-- Options: 
+  - Text
+  - Icons
+  - Icons+Text
+  - Black/Themed
+  //-->
+  <nav>
+    <li class="active">Item1</li>
+    <li>Item2</li>
+    <li>Item3</li>
+    <li>Item4</li>
+  </nav>
+</body>
+</html>

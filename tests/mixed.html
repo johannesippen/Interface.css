@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url(reset.css);
+    @import url(structure.css);
+    @import url(standard.skin.css);
+    @import url(extended.skin.css);
+    @import url(debug.skin.css);
+    body {
+      background: transparent url(mixed.png) no-repeat 0px -20px!important;
+      background-size: 320px 480px!important;
+    }
+    header, ul, p, h2 {
+      opacity: .5;
+    }
+  </style>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body class="ios">
+  <!-- Titlebar -->
+  <header>
+    <h1>Sounds</h1>
+  </header>
+  <!-- List -->
+  <h2>Silent</h2>
+  <ul>
+    <li>Vibrate<input type="checkbox"></li>
+  </ul>
+  <h2>Ringer and Alerts</h2>
+  <ul>
+    <li>&nbsp;</li>
+    <li>Change with Buttons<input type="checkbox"></li>
+  </ul>
+  <p>The volume of the ringer and alerts can be adjusted using the volume buttons.</p>
+  <ul>
+    <li>&nbsp;</li>
+    <li>Change with Buttons<input type="checkbox"></li>
+  </ul>
+</body>
+</html>

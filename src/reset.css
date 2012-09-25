@@ -1,0 +1,13 @@
+/* Reset */
+html, body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, button, input, input[type=password], input[type=search], textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  list-style: none;
+  font: normal 16px/21px "Helvetica Neue", sans-serif;
+  -webkit-appearance: none;
+  -webkit-text-size-adjust: none
+}
+textarea {
+  display: block;
+}
