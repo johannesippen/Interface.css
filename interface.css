@@ -126,6 +126,28 @@ textarea {
   height: 43px;
   border-top: none;
 }
+/* Complex Lists */
+.ios div[data-layout=complex] ul li {
+  font: normal 15px/20px sans-serif;
+  overflow: auto;
+  white-space: normal;
+  text-overflow: none;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ios div[data-layout=complex] ul li a,
+.ios div[data-layout=complex] ul li span {
+  background: none;
+  float: none;
+  display: inline;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+.ios div[data-layout=complex] ul li a:after {
+  display: none;
+}
 .ios li textarea {
   padding: 8px;
   margin: -10px;
