@@ -1,0 +1,142 @@
+.ios {
+  background: #c5ccd4;
+  color: #4c566c;
+  text-rendering: optimizeLegibility;
+}
+.ios ul {
+  border-radius: 10px;
+  border: 1px solid #a1a7ad;
+  background: #f7f7f7;
+  color: #000;
+  box-shadow: 0 1px 0 #f6f7f8, 0 1px 0 #d7d7d7 inset;
+  overflow: hidden;
+}
+.ios ul li {
+  border-top: 1px solid #fdfdfd;
+  border-bottom: 1px solid #cacaca;
+}
+.ios ul li:first-child {
+  border-top: none;
+  padding-top: 1px;
+}
+.ios ul li:last-child {
+  border-bottom: none;
+}
+.ios ul li span {
+  color: #385487;
+}
+.ios ul li a {
+  padding-right: 26px;
+  padding-top: -1px;
+  position: relative;
+  color: #000;
+}
+.ios ul li a:after {
+  content: " ";
+  font-size: 1px;
+  height: 6px;
+  width: 6px;
+  border-right: 3px solid #7b7b7b;
+  border-top: 3px solid #7b7b7b;
+  position: absolute;
+  right: 16px;
+  top: 17px;
+  -webkit-transform: rotate(45deg);
+}
+/* TODO: Add proper Mouseover colors*/
+.ios ul li a:hover {
+  background-image: -webkit-linear-gradient(top,#058cf8,#015ee7);
+  background-size: 100% 100%;
+  color: #fff;
+}
+.ios ul li:first-child a {
+  border-top-left-radius: 8px!important;
+  border-top-right-radius: 8px!important;
+}
+.ios ul li:last-child a {
+  border-bottom-left-radius: 8px!important;
+  border-bottom-right-radius: 8px!important;
+}
+.ios ul li a:hover span,
+.ios ul li a:hover:after {
+  color: #fff;
+  border-color: #fff;
+}
+.ios ul li label {
+  color: #385487;
+}
+.ios ul li input[type=text],
+.ios ul li input[type=password] {
+  background: none;
+  margin-left: 10px;
+  outline: none;
+}
+.ios ul[data-layout=fullscreen] {
+  background: #fff;
+}
+.ios header {
+  height: 42px;
+  line-height: 42px;
+  background-image: -webkit-linear-gradient(top,
+    #ccd2da 0,
+    #b4bfce 1%,
+    #889bb3 50%,
+    #7e94b0 51%,
+    #6d83a1 100%
+    );
+  border-bottom: 1px solid #2d3033;
+  color: #fff;
+}
+.ios header h1 {
+  text-shadow: 0 -1px 0px #48515c;
+}
+.ios h2,
+.ios p {
+  text-shadow: 0 1px 0 #fff;
+}
+.ios form[data-layout=button] button {
+  border-radius: 10px;
+  border: 1px solid #a1a7ad;
+  background: #f7f7f7;
+  color: #000;
+  box-shadow: 0 1px 0 #f6f7f8, 0 1px 0 #d7d7d7 inset;
+}
+.ios form[data-layout=shorttext] textarea {
+  border-radius: 10px;
+  border: 1px solid #a1a7ad;
+  background: #f7f7f7;
+  color: #000;
+  box-shadow: 0 1px 0 #f6f7f8, 0 1px 0 #d7d7d7 inset;
+  outline: none;
+}
+.ios form[data-layout=longtext] textarea {
+  border-radius: 0;
+}
+.ios form[data-layout=search] {
+  background-image: -webkit-linear-gradient(top,#e3e9ed,#b3bec5);
+  border-bottom: 1px solid #7a868e;
+}
+.ios form[data-layout=search] input[type=search] {
+  border: 1px solid #7c8b9d;
+  box-shadow: 0 1px 3px #9f9f9f inset;
+}
+.ios nav {
+  border-top: 1px solid #000;
+  background-color: #000;
+  background-image: -webkit-linear-gradient(top,
+    #575757 0,
+    #303030 1%,
+    #141414 50%,
+    #000 51%
+  );
+}
+.ios nav li {
+  margin: 2px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 56px
+}
+.ios nav li.active {
+  background: rgba(255,255,255,.15);
+}
