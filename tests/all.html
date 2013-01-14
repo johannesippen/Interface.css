@@ -2,11 +2,11 @@
 <html>
 <head>
   <style>
-    @import url(../src/reset.css);
-    @import url(../src/structure.css);
-    @import url(../src/standard.skin.css);
-    @import url(../src/extended.skin.css);
-    // @import url(../src/debug.skin.css);
+    @import url(../src/reset.less);
+    @import url(../src/structure.less);
+    @import url(../src/standard.skin.less);
+    @import url(../src/extended.skin.less);
+    // @import url(../src/debug.skin.less);
   </style>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
@@ -96,6 +96,14 @@
     <li><a href="#">3G Settings</a></li>
     <li>Frequenzy<span>2.4 GHz</span></li>
   </ul>
+  <h2>
+    Complex List
+  </h2>
+  <div data-layout="complex">
+    <ul data-layout="fullscreen">
+      <li><a href="#"><img src="../src/img/Icon-Small@2x.png">Nico ist einer Bar ca. 3km entfernt.</a></li>
+    </ul>
+  </div>
   <h2>
     Fullscreen Text Input
   </h2>
