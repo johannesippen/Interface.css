@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url(../src/reset.less);
+    @import url(../src/structure.less);
+    @import url(../src/standard.skin.less);
+    @import url(../src/extended.skin.less);
+    // @import url(../src/debug.skin.less);
+  </style>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body class="ios">
+  <!-- Titlebar -->
+  <header data-position="">
+    <button data-action="home">Back</button>
+    <h1>Dashboard</h1>
+    <button data-action="reload">Reload</button>
+  </header>
+  <section data-name="home">
+    <ul>
+      <li><a href="#" data-action="second">Open Second Section</a></li>
+      <li><a href="#" data-action="third">Open Third Section</a></li>
+    </ul>
+  </section>
+  <section data-name="second">
+    Second one
+  </section>
+  <section data-name="third">
+    Third one
+  </section>
+  <script src="../helper/zepto.min.js"></script>
+  <script src="../helper/helper.js"></script>
+</body>
+</html>

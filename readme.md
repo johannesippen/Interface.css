@@ -9,7 +9,7 @@ When it comes to designing or prototyping a mobile interface with HTML5, complex
 	<!DOCTYPE html>
 	<html>
 	<head>
-	  <link src="path/to/interface.css" rel="stylesheet">
+	  <link href="path/to/interface.css" rel="stylesheet">
 	  <meta name="apple-mobile-web-app-capable" content="yes">
 	  <meta name="viewport" content="initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 	</head>
