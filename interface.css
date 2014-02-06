@@ -1,29 +1,13 @@
-/* Copyright Johannes Ippen 2012 */
+/* Copyright Johannes Ippen 2014 */
 /* Reset */
-html,
-body,
-ol,
-ul,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-button,
-input,
-input[type=password],
-input[type=search],
-textarea {
+html, body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, button, input, input[type=password], input[type=search], textarea {
   margin: 0;
   padding: 0;
   border: none;
   list-style: none;
   font: normal 16px/21px "Helvetica Neue", sans-serif;
   -webkit-appearance: none;
-  -webkit-text-size-adjust: none;
+  -webkit-text-size-adjust: none
 }
 textarea {
   display: block;
@@ -41,15 +25,12 @@ textarea {
   position: absolute;
   height: 28px;
   font: bold 10px/26px sans-serif;
-  background-image: -webkit-linear-gradient(top, #8aa1bf 0, #5877a2 50%, #476999 51%, #4a679b 100%);
-  border: 1px solid #2e4361;
-  text-shadow: 0 -1px 0 #374351;
-  color: #fff;
-  box-shadow: 0 1px 0 #9cabc0, 0 1px 1px #788ba5;
   margin: 7px 5px;
   padding: 0 8px;
-  border-radius: 4px;
   top: 0;
+}
+.ios header button:first-child {
+  left: 0;
 }
 .ios header h1 + button {
   right: 0;
@@ -79,7 +60,7 @@ textarea {
   line-height: 100%;
 }
 .ios ul + h2 {
-  margin-top: -2px !important;
+  margin-top: -2px!important;
 }
 .ios ul + p {
   margin-top: -16px;
@@ -111,7 +92,7 @@ textarea {
   padding: 0 10px;
   padding-right: 20px;
   text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .ios ul li span {
   float: right;
@@ -193,7 +174,7 @@ textarea {
   overflow: hidden;
   font-weight: bold;
   font-size: 17px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .ios form[data-layout=shorttext] {
   display: -webkit-box;
@@ -204,7 +185,7 @@ textarea {
   -webkit-box-flex: 1;
   padding: 8px 10px;
   min-height: 142px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .ios form[data-layout=longtext] {
   display: -webkit-box;
@@ -216,7 +197,7 @@ textarea {
   padding: 19px;
   min-height: 164px;
   outline: 0;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .ios h2 + form[data-layout=search],
 .ios h2 + form[data-layout=longtext] {
@@ -236,31 +217,31 @@ textarea {
   padding: 0 11px;
 }
 .ios {
-  background: #c5ccd4;
-  color: #4c566c;
+  font-family: "Helvetica Neue", sans-serif;
+  background: #EFEFF4;
+  color: #646469;
   text-rendering: optimizeLegibility;
 }
 .ios ul {
-  border-radius: 10px;
-  border: 1px solid #a1a7ad;
-  background: #f7f7f7;
-  color: #000;
-  box-shadow: 0 1px 0 #f6f7f8, 0 1px 0 #d7d7d7 inset;
+  border-top: 1px solid #989898;
+  border-bottom: 1px solid #989898;
+  background: #fff;
+  color: #090909;
   overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
 }
 .ios ul li {
-  border-top: 1px solid #fdfdfd;
-  border-bottom: 1px solid #cacaca;
+  border-top: 1px solid #D1D0D4;
+  margin-left: 15px;
+  padding-left: 0;
+  font-weight: 300;
 }
 .ios ul li:first-child {
   border-top: none;
-  padding-top: 1px;
-}
-.ios ul li:last-child {
-  border-bottom: none;
 }
 .ios ul li span {
-  color: #385487;
+  color: #8B8B90;
 }
 .ios ul li a {
   padding-right: 26px;
@@ -273,96 +254,112 @@ textarea {
   font-size: 1px;
   height: 6px;
   width: 6px;
-  border-right: 3px solid #7b7b7b;
-  border-top: 3px solid #7b7b7b;
+  border-right: 3px solid #BBBBC1;
+  border-top: 3px solid #BBBBC1;
   position: absolute;
   right: 16px;
   top: 17px;
   -webkit-transform: rotate(45deg);
 }
-/* TODO: Add proper Mouseover colors*/
-.ios ul li a:hover {
-  background-image: -webkit-linear-gradient(top, #058cf8, #015ee7);
-  background-size: 100% 100%;
+.ios ul li a.active {
+  background: #989898;
   color: #fff;
 }
-.ios ul li:first-child a {
-  border-top-left-radius: 8px!important;
-  border-top-right-radius: 8px!important;
-}
-.ios ul li:last-child a {
-  border-bottom-left-radius: 8px!important;
-  border-bottom-right-radius: 8px!important;
-}
-.ios ul li a:hover span,
-.ios ul li a:hover:after {
+.ios ul li a.active span,
+.ios ul li a.active:after {
   color: #fff;
   border-color: #fff;
 }
 .ios ul li label {
-  color: #385487;
+  color: #989898;
 }
 .ios ul li input[type=text],
 .ios ul li input[type=password] {
   background: none;
-  margin-left: 10px;
+  margin-left: 15px;
   outline: none;
 }
 .ios ul[data-layout=fullscreen] {
   background: #fff;
 }
+.ios ul[data-layout=updates] li {
+  white-space: normal;
+}
 .ios header {
-  height: 42px;
-  line-height: 42px;
-  background-image: -webkit-linear-gradient(top, #ccd2da 0, #b4bfce 1%, #889bb3 50%, #7e94b0 51%, #6d83a1 100%);
-  border-bottom: 1px solid #2d3033;
-  color: #fff;
+  height: 43px;
+  line-height: 43px;
+  background: rgba(247,247,247,.95);
+  border-bottom: 1px solid #989898;
+  color: #000000;
 }
-.ios header h1 {
-  text-shadow: 0 -1px 0px #48515c;
+.ios header button {
+  font-size: 17px;
+  font-weight: 300;
+  text-shadow: none;
+  box-shadow: none;
+  border: none;
+  background: none;
+  color: #0283FF;
 }
-.ios h2,
+.ios h1 {
+  font-weight: 500;
+}
+.ios h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-left: 5px;
+}
 .ios p {
-  text-shadow: 0 1px 0 #fff;
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 5px;
+}
+.ios form[data-layout=button] {
+  margin-right: 0;
+  margin-left: 0;
 }
 .ios form[data-layout=button] button {
-  border-radius: 10px;
-  border: 1px solid #a1a7ad;
-  background: #f7f7f7;
-  color: #000;
-  box-shadow: 0 1px 0 #f6f7f8, 0 1px 0 #d7d7d7 inset;
+  border-top: 1px solid #989898;
+  border-bottom: 1px solid #989898;
+  background: #fff;
+  color: #0283FF;
+  text-align: left;
+  padding-left: 15px;
+  font-weight: 300;
+}
+.ios form[data-layout=shorttext] {
+  margin-left: 0;
+  margin-right: 0;
 }
 .ios form[data-layout=shorttext] textarea {
-  border-radius: 10px;
-  border: 1px solid #a1a7ad;
-  background: #f7f7f7;
+  border-top: 1px solid #989898;
+  border-bottom: 1px solid #989898;
+  background: #fff;
   color: #000;
-  box-shadow: 0 1px 0 #f6f7f8, 0 1px 0 #d7d7d7 inset;
   outline: none;
+  padding-left: 15px;
 }
 .ios form[data-layout=longtext] textarea {
   border-radius: 0;
 }
 .ios form[data-layout=search] {
-  background-image: -webkit-linear-gradient(top, #e3e9ed, #b3bec5);
-  border-bottom: 1px solid #7a868e;
+  border-top: 1px solid #989898;
+  border-bottom: 1px solid #989898;
+  background: #fff;
 }
 .ios form[data-layout=search] input[type=search] {
   border: 1px solid #7c8b9d;
-  box-shadow: 0 1px 3px #9f9f9f inset;
 }
 .ios nav {
   border-top: 1px solid #000;
-  background-color: #000;
-  background-image: -webkit-linear-gradient(top, #575757 0, #303030 1%, #141414 50%, #000000 51%);
+  background-color: rgba(20,20,20,.8);
 }
 .ios nav li {
   margin: 2px;
-  border-radius: 4px;
-  color: #fff;
-  font-weight: bold;
-  line-height: 56px;
+  color: #929292;
+  line-height: 56px
 }
 .ios nav li.active {
-  background: rgba(255, 255, 255, 0.15);
+  color: #52C4F8;
 }

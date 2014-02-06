@@ -1,0 +1,147 @@
+.ios {
+  font-family: "Helvetica Neue", sans-serif;
+  background: #EFEFF4;
+  color: #646469;
+  text-rendering: optimizeLegibility;
+}
+.ios ul {
+  border-top: 1px solid #989898;
+  border-bottom: 1px solid #989898;
+  background: #fff;
+  color: #090909;
+  overflow: hidden;
+  margin-left: 0;
+  margin-right: 0;
+}
+.ios ul li {
+  border-top: 1px solid #D1D0D4;
+  margin-left: 15px;
+  padding-left: 0;
+  font-weight: 300;
+}
+.ios ul li:first-child {
+  border-top: none;
+}
+.ios ul li span {
+  color: #8B8B90;
+}
+.ios ul li a {
+  padding-right: 26px;
+  padding-top: -1px;
+  position: relative;
+  color: #000;
+}
+.ios ul li a:after {
+  content: " ";
+  font-size: 1px;
+  height: 6px;
+  width: 6px;
+  border-right: 3px solid #BBBBC1;
+  border-top: 3px solid #BBBBC1;
+  position: absolute;
+  right: 16px;
+  top: 17px;
+  -webkit-transform: rotate(45deg);
+}
+.ios ul li a.active {
+  background: #989898;
+  color: #fff;
+}
+.ios ul li a.active span,
+.ios ul li a.active:after {
+  color: #fff;
+  border-color: #fff;
+}
+.ios ul li label {
+  color: #989898;
+}
+.ios ul li input[type=text],
+.ios ul li input[type=password] {
+  background: none;
+  margin-left: 15px;
+  outline: none;
+}
+.ios ul[data-layout=fullscreen] {
+  background: #fff;
+}
+.ios ul[data-layout=updates] li {
+  white-space: normal;
+}
+.ios header {
+  height: 43px;
+  line-height: 43px;
+  background: rgba(247,247,247,.95);
+  border-bottom: 1px solid #989898;
+  color: #000000;
+}
+.ios header button {
+  font-size: 17px;
+  font-weight: 300;
+  text-shadow: none;
+  box-shadow: none;
+  border: none;
+  background: none;
+  color: #0283FF;
+}
+.ios h1 {
+  font-weight: 500;
+}
+.ios h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-left: 5px;
+}
+.ios p {
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 5px;
+}
+.ios form[data-layout=button] {
+  margin-right: 0;
+  margin-left: 0;
+}
+.ios form[data-layout=button] button {
+  border-top: 1px solid #989898;
+  border-bottom: 1px solid #989898;
+  background: #fff;
+  color: #0283FF;
+  text-align: left;
+  padding-left: 15px;
+  font-weight: 300;
+}
+.ios form[data-layout=shorttext] {
+  margin-left: 0;
+  margin-right: 0;
+}
+.ios form[data-layout=shorttext] textarea {
+  border-top: 1px solid #989898;
+  border-bottom: 1px solid #989898;
+  background: #fff;
+  color: #000;
+  outline: none;
+  padding-left: 15px;
+}
+.ios form[data-layout=longtext] textarea {
+  border-radius: 0;
+}
+.ios form[data-layout=search] {
+  border-top: 1px solid #989898;
+  border-bottom: 1px solid #989898;
+  background: #fff;
+}
+.ios form[data-layout=search] input[type=search] {
+  border: 1px solid #7c8b9d;
+}
+.ios nav {
+  border-top: 1px solid #000;
+  background-color: rgba(20,20,20,.8);
+}
+.ios nav li {
+  margin: 2px;
+  color: #929292;
+  line-height: 56px
+}
+.ios nav li.active {
+  color: #52C4F8;
+}
